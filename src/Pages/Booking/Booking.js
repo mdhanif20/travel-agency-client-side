@@ -1,12 +1,18 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import axios from 'axios';
 const Booking = () => {
+    // const [customer,setCustomer] = useState("");
     const nameRef = useRef();
     const emailRef = useRef();
     const phoneRef = useRef();
     const addressRef = useRef();
     const tourRef = useRef();
-
+    /*  const customerData = () =>{
+        axios.get(`https://nameless-savannah-22070.herokuapp.com/booking/${customer}`)
+        .then(res=>{
+            console.log(res);
+        })
+    }  */
     const handleBookingInfo = e =>{
         const name = nameRef.current.value;
         const email = emailRef.current.value;
@@ -20,15 +26,15 @@ const Booking = () => {
             phoneRef.current.value="";
             addressRef.current.value="";
         }
-        axios.post("http://localhost:5000/booking",booking)
+        axios.post("https://nameless-savannah-22070.herokuapp.com/booking",booking)
         .then(res => {
            if(res.data.insertedId){
                alert("Your Booking Successful.")
                clearing();
+            //    customerData();
            }
-            console.log(res.data.insertedId)
+        //    setCustomer(res.data.insertedId)
         })
-        
         e.preventDefault();
     }
     return (
