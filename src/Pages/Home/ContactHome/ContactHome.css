@@ -1,0 +1,14 @@
+img#contactImg {
+    width: 100%;
+    height: 300px;
+}
+div#contact {
+    width: 88%;
+    margin: auto;
+}
+@media only screen and (max-width: 776px){
+    div#contact {
+        width: 98%;
+        /* margin: auto; */
+    }
+}

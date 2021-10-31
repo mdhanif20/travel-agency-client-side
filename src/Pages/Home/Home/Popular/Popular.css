@@ -1,0 +1,8 @@
+p#reting {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+img#popular-Img {
+    height: 270px;
+}

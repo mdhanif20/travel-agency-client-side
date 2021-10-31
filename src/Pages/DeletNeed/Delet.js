@@ -73,3 +73,54 @@ const services = [
         rating: 4.8
     },
 ]
+
+const tour = [
+    {
+        name:"Canada Tours",
+        img:"https://i.ibb.co/1rynR28/canada.jpg",
+        details:"Ride the Rails through Canada's Sparkling Landscapes on a Winter Train Trip to the Rockies. Your Travel Guides for Canada Itineraries.Explore in comfort and style. Private, luxury transportation in Southern Oregon. Wireless Internet.",
+        rating:4.9,
+        time: 6,
+        totalPerson: 439
+    },
+    {
+        name:"Cina Great Wall",
+        img:"https://i.ibb.co/NZB802G/cina.jpg",
+        details:"Search China Travel Agency, Information from Trusted Internet Sources. Explore the Best Info Now. 100+ Unique Results. Find All Info You Want. Quick Answers. Useful & Relevant. Find in Seconds. Services: Secure Search.",
+        rating:4.7,
+        time: 5,
+        totalPerson: 389
+    },
+    {
+        name:"Tour In Dubai",
+        img:"https://i.ibb.co/b67nxdV/dubai.jpg",
+        details:"Dubai Tour Packages from Bangladesh, Dubai family tour Packages, Dubai Group Tour, Dubai Burj Khalifa Tour, Dubai desert safari belly dance Tour.",
+        rating:4.8,
+        time: 9,
+        totalPerson: 439
+    },
+    {
+        name:"Himalaya Nepal",
+        img:"https://i.ibb.co/bzjZnm1/himaloi.jpg",
+        details:"Prepare your visit to the Colosseum with the following tips and ticket information. Avoid the queues or experience the Colosseum with a guided tour. Bezoektips Alhambra. Avoid the queues. Bezoekerslimiet. Book your tickets online.VIP Transport. Services: Bus Hiring Services.",
+        rating:4.7,
+        time: 5,
+        totalPerson: 122
+    },
+    {
+        name:"Tour In Singapore",
+        img:"https://i.ibb.co/cXSFdgB/singapur.jpg",
+        details:"Find Singapore Tours. Unlimited Access. 100% Secure. Always Facts.A High Level Of Comfort, Safety And Convenience To Every Passenger And Customer. Trust your next booking with one of Singapore's most established bus providers. Airport Transfers. Buses. Shuttle Services. ",
+        rating:4.6,
+        time: 7,
+        totalPerson: 119
+    },
+    {
+        name:"Malaysia Tour",
+        img:"https://i.ibb.co/sVpJqZL/malesia.jpg",
+        details:"Malaysia and Singapore both country are not only called Asian giant and jewels of Southasia but also the places is paradise for delicious sea food, advance western culture, new generation society and civilization in modern. This Singapore Malaysia tour give you the opportunity to see some of best attraction, highlight and most visited and ranking places in around.",
+        rating:4.9,
+        time: 9,
+        totalPerson: 251
+    }
+]

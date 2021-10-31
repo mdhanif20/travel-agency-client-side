@@ -9,6 +9,9 @@ import {
 import Header from './Pages/Home/Header/Header';
 import Services from './Pages/Services/Services';
 import Booking from './Pages/Booking/Booking';
+import NotFound from './Pages/NotFound/NotFound';
+import Footer from './Pages/Footer/Footer';
+import Contact from './Pages/Footer/Contact/Contact';
 
 function App() {
   return (
@@ -29,7 +32,14 @@ function App() {
           <Route path="/booking">
             <Booking></Booking>
           </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
       
     </div>

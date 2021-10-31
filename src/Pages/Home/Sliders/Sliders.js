@@ -29,7 +29,7 @@ const Sliders = () => {
                 </div>
                 <Carousel.Caption>
                 <h3>Orna Travel Agency</h3>
-                <p className=" fw-bolder">Orna Travels is a trusted and reliable tour and travel among all the leading and updated tour-operating services in Bangladesh.</p>
+                <p className=" fw-bolder my-4">Orna Travels is a trusted and reliable tour and travel among all the leading and updated tour-operating services in Bangladesh.</p>
                 <Link to="/services">
                 <button type="button" className="btn btn-primary border-0 rounded-0 fw-bolder">Take Service</button>
                 </Link>
