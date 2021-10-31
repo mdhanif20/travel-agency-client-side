@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './Pages/Home/HomePage/Home';
+import Home from './Pages/Home/Home/Home';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -7,6 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 import Header from './Pages/Home/Header/Header';
+import Services from './Pages/Services/Services';
+import Booking from './Pages/Booking/Booking';
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
           </Route>
           <Route path="/home">
           <Home></Home>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/booking">
+            <Booking></Booking>
           </Route>
         </Switch>
       </Router>
