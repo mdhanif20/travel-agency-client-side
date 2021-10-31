@@ -35,6 +35,9 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
+          <Route path="/booking">
+            <Booking></Booking>
+          </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>

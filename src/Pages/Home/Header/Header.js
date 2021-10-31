@@ -37,6 +37,7 @@ const Header = () => {
                     <Nav className="ms-auto">
                         <Nav.Link className="fs-4" as={Link} to="/home" href="#home">Home</Nav.Link>
                         <Nav.Link className="fs-4" as={Link} to="/link" href="#link">Link</Nav.Link>
+                        <Nav.Link className="fs-4" as={Link} to="/booking" href="#link">Booking</Nav.Link>
                         <Nav.Link className="fs-4" as={Link} to="/contact" href="#link">Contact Us</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
