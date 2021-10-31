@@ -4,10 +4,82 @@
 #single-service{
     height: 200px;
 }
+
 #service-img{
     height: 200px;
 }
 div#service-card {
     border: 0;
     box-shadow: 0px 2px 6px 0px #ddd3d3;
+}
+/* span#facebook,#youtube{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    color: #fff;
+    padding: 8px;
+    justify-content: space-between;
+} */
+span#facebook, #youtube, #twiter, #instagram{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    color: #fff;
+    padding: 8px;
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+span#facebook{
+    background-color: #1961fd;
+}
+span#youtube{
+    background-color: #FF0000;
+}
+span#twiter{
+    background-color: #1D9BF0;
+}
+span#instagram{
+    background-color: #D32E7A;
+}
+/* p#upper-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+div#all-service {
+    height: 70px;
+}
+img#allService-img {
+    height: 100%;
+}
+p#allServiceDes {
+    font-size: 12px;
+    color: #7c7c7c;
+}
+form#form input,textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+small#services {
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 5px;
+}
+@media only screen and (max-width:767px){
+    #single-service{
+        height: 100%;
+    }
+    div#all-service {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    img#allService-img {
+        height: 100%;
+    }
+    #all-service-header{
+        font-size: 10px;
+    }
+    p#allServiceDes {
+        font-size: 9px;
+        color: #7c7c7c;
+    }
 }
