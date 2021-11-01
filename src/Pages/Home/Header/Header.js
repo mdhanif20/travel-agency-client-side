@@ -38,14 +38,14 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link className="fs-4" as={Link} to="/home" href="#home">Home</Nav.Link>
-                        <Nav.Link className="fs-4" as={Link} to="/booking" href="#link">Booking</Nav.Link>
-                        <Nav.Link className="fs-4" as={Link} to="/manageBooking" href="#link">Manage Booking</Nav.Link>
-                        <Nav.Link className="fs-4" as={Link} to="/contact" href="#link">Contact Us</Nav.Link>
+                        <Nav.Link className="fs-5 fw-bolder" as={Link} to="/home" href="#home">Home</Nav.Link>
+                        <Nav.Link className="fs-5 fw-bolder" as={Link} to="/booking" href="#link">Booking</Nav.Link>
+                        <Nav.Link className="fs-5 fw-bolder" as={Link} to="/manageBooking" href="#link">Manage Booking</Nav.Link>
+                        <Nav.Link className="fs-5 fw-bolder" as={Link} to="/contact" href="#link">Contact Us</Nav.Link>
                        {
-                           users.email?<button onClick={logOut} id="headerLogOut" className="border-0 fs-5">Log Out</button>
+                           users.email?<button onClick={logOut} id="headerLogOut" className="border-0 fs-5 fw-bolder">Log Out</button>
                            :
-                           <Nav.Link className="fs-4" as={Link} to="/login" href="#link">Login</Nav.Link> 
+                           <Nav.Link className="fs-5 fw-bolder" as={Link} to="/login" href="#link">Login</Nav.Link> 
                            
                        }
                     </Nav>

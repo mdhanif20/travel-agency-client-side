@@ -64,22 +64,31 @@ small#services {
     border-bottom: 2px solid #dddddd;
     padding-bottom: 5px;
 }
+
 @media only screen and (max-width:767px){
+    
     #single-service{
         height: 100%;
     }
     div#all-service {
         height: 30px;
-        margin-bottom: 20px;
     }
     img#allService-img {
         height: 100%;
     }
     #all-service-header{
-        font-size: 10px;
+        font-size: 8px;
     }
     p#allServiceDes {
-        font-size: 9px;
+        font-size: 7px;
         color: #7c7c7c;
+        padding: 0;
+        margin: 0;
+    }
+    #followService{
+        font-size: 10px;
+    }
+    #contactSet{
+        font-size: 12px;
     }
 }
