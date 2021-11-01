@@ -1,25 +1,26 @@
 import React, {useRef, useState} from 'react';
 import axios from 'axios';
+import MyOrder from '../MyOrders/MyOrder';
+// import { useState } from 'react';
 const Booking = () => {
-    // const [customer,setCustomer] = useState("");
+    const[customer,setCustomer] = useState({});
     const nameRef = useRef();
     const emailRef = useRef();
     const phoneRef = useRef();
     const addressRef = useRef();
     const tourRef = useRef();
-    /*  const customerData = () =>{
-        axios.get(`https://nameless-savannah-22070.herokuapp.com/booking/${customer}`)
-        .then(res=>{
-            console.log(res);
-        })
-    }  */
+  
+        
+      
     const handleBookingInfo = e =>{
+        
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const phone = phoneRef.current.value;
         const address = addressRef.current.value;
         const tour = tourRef.current.value;
         const booking = {name,email,phone,address,tour};
+        
         const clearing = () =>{
             nameRef.current.value="";
             emailRef.current.value="";
@@ -29,8 +30,11 @@ const Booking = () => {
         axios.post("https://nameless-savannah-22070.herokuapp.com/booking",booking)
         .then(res => {
            if(res.data.insertedId){
-               alert("Your Booking Successful.")
+               alert("Your Booking Successful.");
+               setCustomer(booking);
+                
                clearing();
+               
            }
         })
         e.preventDefault();
@@ -38,15 +42,15 @@ const Booking = () => {
     
     return (
         <div>
-            
-                <div className=" text-start ms-md-5 py-md-5 px-md-5">
+            <div className="row">
+                <div className="col-md-8 text-start ms-md-5 py-md-5 px-md-5">
                 <div className="border rounded ps-5 py-5">
                         <h2 className="text-start">Booking Now</h2>
                         <form id="bookingForm" onSubmit={handleBookingInfo}>
-                            <input ref={nameRef} type="text" placeholder="Name" className="my-2 w-75 p-1 border-1 rounded fs-5" /> <br />
-                            <input type="email" ref={emailRef} placeholder="Email" className="my-2 w-75 p-1 border-1 rounded fs-5"/> <br />
-                            <input type="phone number" ref={phoneRef} placeholder="Phone Number" className="my-2 w-75 p-1 border-1 rounded fs-5"/><br />
-                            <input type="text" ref={addressRef} placeholder="city,country" className="my-2 w-75 p-1 border-1 rounded fs-5"/><br />
+                            <input ref={nameRef} type="text" placeholder="Name" className="my-2 w-75 p-1 border-1 rounded fs-5" required/> <br />
+                            <input type="email" ref={emailRef} placeholder="Email" className="my-2 w-75 p-1 border-1 rounded fs-5" required/> <br />
+                            <input type="phone number" ref={phoneRef} placeholder="Phone Number" className="my-2 w-75 p-1 border-1 rounded fs-5" required/><br />
+                            <input type="text" ref={addressRef} placeholder="city,country" className="my-2 w-75 p-1 border-1 rounded fs-5" required/><br />
                            
                             <p className="text-start">
                             <label for="cars" >Choose Your Interested Tour Place: </label><br />
@@ -64,8 +68,8 @@ const Booking = () => {
                         </form>
                     </div>
                 </div>
-               
-           
+            </div>
+            
         </div>
        
     );

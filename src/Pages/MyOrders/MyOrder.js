@@ -1,17 +1,18 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React from 'react';
 
 const MyOrder = (props) => {
-    const name = props.name;
-    console.log(name);
-    axios.get("https://nameless-savannah-22070.herokuapp.com/manageBooking")
-    .then(res=>{
-        console.log(res.data);
-    })
+    
+        const customer = props.myOrder;
+        console.log(customer);
+       
     return (
+        
         <div>
-            <h2>My orders page</h2>
+            <h2>My Confirmed orders</h2>
+            <h2>{customer.name}</h2>
         </div>
+         
     );
 };
 
