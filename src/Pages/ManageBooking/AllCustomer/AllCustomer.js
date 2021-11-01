@@ -1,6 +1,7 @@
 
 import axios from 'axios';
 import React from 'react';
+import MyOrder from '../../MyOrders/MyOrder';
 import "./AllCustomer.css";
 
 const AllCustomer = (props) => {
@@ -9,7 +10,7 @@ const AllCustomer = (props) => {
     const handleDeletUser = id =>{
         const proceed = window.confirm("Are you sure,You want to delet it?");
         if(proceed){
-            axios.delete(`http://localhost:5000/manageBooking/${id}`)
+            axios.delete(`https://nameless-savannah-22070.herokuapp.com/manageBooking/${id}`)
             .then(res=>{
                 // console.log(res);
             })

@@ -13,6 +13,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Footer/Footer';
 import Contact from './Pages/Footer/Contact/Contact';
 import ManageBooking from './Pages/ManageBooking/ManageBooking';
+import MyOrder from './Pages/MyOrders/MyOrder';
+import Login from './Pages/LogIn/LogIn';
 
 function App() {
   return (
@@ -41,6 +43,12 @@ function App() {
           </Route>
           <Route path="/manageBooking">
             <ManageBooking></ManageBooking>
+          </Route>
+          <Route path="/myOrders">
+            <MyOrder></MyOrder>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

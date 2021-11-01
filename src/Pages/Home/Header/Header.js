@@ -2,10 +2,13 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useFirebase from './../../Firebase/useFirebase';
+import "./Header.css";
 
 
 const Header = () => {
     const [logos, setLogos] = useState([]);
+    const {users,logOut} = useFirebase();
     // const [balisUrl,setBalisUrl] = useState({});
     axios.get('https://nameless-savannah-22070.herokuapp.com/logo')
     .then(res=>{
@@ -39,7 +42,15 @@ const Header = () => {
                         <Nav.Link className="fs-4" as={Link} to="/link" href="#link">Link</Nav.Link>
                         <Nav.Link className="fs-4" as={Link} to="/booking" href="#link">Booking</Nav.Link>
                         <Nav.Link className="fs-4" as={Link} to="/manageBooking" href="#link">Manage Booking</Nav.Link>
+                        <Nav.Link className="fs-4" as={Link} to="/myOrders" href="#link">My Orders</Nav.Link>
                         <Nav.Link className="fs-4" as={Link} to="/contact" href="#link">Contact Us</Nav.Link>
+                       {
+                           users.email?<button onClick={logOut} id="headerLogOut" className="border-0 fs-5">Log Out</button>
+                           :
+                           <Nav.Link className="fs-4" as={Link} to="/login" href="#link">Login</Nav.Link> 
+                           
+                       }
+                       {/*  <Nav.Link className="fs-4" as={Link} to="/login" href="#link">Login</Nav.Link> */}
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

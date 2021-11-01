@@ -31,12 +31,11 @@ const Booking = () => {
            if(res.data.insertedId){
                alert("Your Booking Successful.")
                clearing();
-            //    customerData();
            }
-        //    setCustomer(res.data.insertedId)
         })
         e.preventDefault();
     }
+    
     return (
         <div>
             
