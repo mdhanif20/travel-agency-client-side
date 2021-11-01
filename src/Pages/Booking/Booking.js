@@ -39,8 +39,8 @@ const Booking = () => {
     }
     return (
         <div>
-            <div className="row">
-                <div className="col-8 text-start ms-md-5 py-md-5 px-md-5">
+            
+                <div className=" text-start ms-md-5 py-md-5 px-md-5">
                 <div className="border rounded ps-5 py-5">
                         <h2 className="text-start">Booking Now</h2>
                         <form id="bookingForm" onSubmit={handleBookingInfo}>
@@ -65,10 +65,8 @@ const Booking = () => {
                         </form>
                     </div>
                 </div>
-                <div className="col-4">
-
-                </div>
-            </div>
+               
+           
         </div>
        
     );

@@ -1,0 +1,13 @@
+#customers {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 5px 1px grey;
+    width: 65%;
+    margin: auto;
+}
+#customerFirst{
+    width: 45%;
+}
+#customersecond{
+    width: 45%;
+}
