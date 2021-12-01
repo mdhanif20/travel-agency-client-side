@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This is a travel agency related website
 
-This is a travel agency related website [Live Side Link](https://orna-travels.web.app/).
+ [Live Side Link](https://orna-travels.web.app/).
 
 Project Details
 1. Users can log in or sign up by using email.
